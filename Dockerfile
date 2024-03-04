@@ -79,6 +79,7 @@ RUN set -ex \
  && chown -R nobody:nobody /var/www/wallabag
 
 ENV PATH="${PATH}:/var/www/wallabag/bin"
+ENV PHP_MEMORY_LIMIT=128M
 
 # Set console entry path
 WORKDIR /var/www/wallabag
